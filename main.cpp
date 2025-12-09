@@ -8,7 +8,6 @@
 
 using namespace std;
 
-
 int main() {
 	// Milestone 1
 	const string FILE_NAME = "data.txt";
@@ -73,7 +72,6 @@ int main() {
 		}
 
 		cout << "\n";
-
 	}
 
 	return 0;

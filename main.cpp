@@ -40,6 +40,7 @@ int main() {
 		cout << pair.first << " " << pair.second << "\n";
 	}
 
+	// Milestone 2
 	int highestCount = 0;
 	for (const auto& pair : traffic) {
 		if (pair.second > highestCount) {
@@ -53,6 +54,20 @@ int main() {
 		if (pair.second == highestCount) {
 			cout << pair.first << " " << pair.second << "\n";
 		}
+	}
+	cout << "\n";
+
+	const int NUM_RANGES = 2;
+	const int RANGES[NUM_RANGES][2] = { {5, 8}, {9,12} };
+
+	for (int i = 0; i < NUM_RANGES; ++i) {
+		const int LOWER = RANGES[i][0];
+		const int UPPER = RANGES[i][1];
+
+		cout << "Airports with traffic in range [" << LOWER << ", " << UPPER << "]:\n";
+		for (const auto& pair : traffic) {
+		}
+
 	}
 
 	return 0;

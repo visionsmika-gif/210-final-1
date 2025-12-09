@@ -40,6 +40,20 @@ int main() {
 		cout << pair.first << " " << pair.second << "\n";
 	}
 
+	int highestCount = 0;
+	for (const auto& pair : traffic) {
+		if (pair.second > highestCount) {
+			highestCount = pair.second;
+		}
+	}
+	cout << "\n";
+	
+	cout << "Busiest airport(s) with count " << highestCount << ":\n";
+	for (const auto& pair : traffic) {
+		if (pair.second == highestCount) {
+			cout << pair.first << " " << pair.second << "\n";
+		}
+	}
 
 	return 0;
 }

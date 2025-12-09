@@ -58,7 +58,8 @@ int main() {
 
 	// Milestone 3
 	const int NUM_RANGES = 2;
-	const int RANGES[NUM_RANGES][2] = { {5, 8}, {9,12} };
+	const int NUM_BOUNDS = 2;
+	const int RANGES[NUM_RANGES][NUM_BOUNDS] = { {5, 8}, {9,12} };
 
 	for (int i = 0; i < NUM_RANGES; ++i) {
 		const int LOWER = RANGES[i][0];

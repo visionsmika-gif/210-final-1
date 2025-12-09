@@ -57,6 +57,7 @@ int main() {
 	}
 	cout << "\n";
 
+	// Milestone 3
 	const int NUM_RANGES = 2;
 	const int RANGES[NUM_RANGES][2] = { {5, 8}, {9,12} };
 
@@ -66,7 +67,12 @@ int main() {
 
 		cout << "Airports with traffic in range [" << LOWER << ", " << UPPER << "]:\n";
 		for (const auto& pair : traffic) {
+			if (pair.second >= LOWER && pair.second <= UPPER) {
+				cout << pair.first << " " << pair.second << "\n";
+			}
 		}
+
+		cout << "\n";
 
 	}
 
